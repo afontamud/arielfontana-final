@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ItemListContainer from './component/ItemListContainer';
+import NavBar from './component/NavBar';
+import Hero from './component/Hero.jsx';
+import ItemDetailContainer from './component/ItemDetailContainer';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Hero title="Hysteria Shop" />
+      <ItemListContainer />
+  
+    </>
   );
 }
-
-export default App;
